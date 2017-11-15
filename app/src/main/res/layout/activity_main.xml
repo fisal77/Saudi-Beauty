@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@android:color/white"
     tools:context="com.fisal.saudibeauty.MainActivity">
 
@@ -17,7 +17,7 @@
         android:padding="7dp"
         android:text="Saudi Beauty"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <ImageView
@@ -26,19 +26,22 @@
         android:layout_height="300dp"
         android:layout_below="@+id/BusinessName"
         android:padding="7dp"
-        android:src="@drawable/Logo" />
+        android:paddingBottom="3.5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
 
 
     <TextView
         android:id="@+id/BusinessDescription"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/BusinessLogo"
         android:fontFamily="sans-serif-condensed"
         android:padding="7dp"
-        android:text="Saudi Beauty is beauty salon booking app in Saudi Arabia. You can locate the nearby beauty salon and show their related services."
+        android:paddingTop="3.5dp"
+        android:text="Saudi Beauty is beauty salon booking app in Saudi Arabia. You can locate the nearby beauty salon and show their related services for men and women."
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="18sp" />
 
@@ -48,8 +51,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/BusinessDescription"
+        android:layout_margin="20dp"
         android:fontFamily="serif"
-        android:padding="7dp"
         android:text="Address: Jeddah - Saudi Arabia, Phone: +966 540702512"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="18sp" />
